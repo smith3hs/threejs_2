@@ -17,14 +17,14 @@ const sizes = {
 };
 
 // Point Light
-const pointLight = new THREE.PointLight(0xffffff, 30);
-pointLight.position.set(-4, 4, 4);
-pointLight.intensity = 1.25;
+const pointLight = new THREE.PointLight(0xffffff, 50);
+pointLight.position.set(-4, 5, 5);
+pointLight.intensity = 1;
 scene.add(pointLight);
 
 // Camera
 const camera = new THREE.PerspectiveCamera(45, sizes.width / sizes.height);
-camera.position.z = 15;
+camera.position.z = 5;
 scene.add(camera);
 
 // Renderer
